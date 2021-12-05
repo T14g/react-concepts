@@ -11,7 +11,7 @@ const users = [
         'id': '3',
         'status': 'online'
     }
-]
+];
 
 const userStatus = (id) => {
     let status = null;
