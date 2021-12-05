@@ -1,4 +1,4 @@
-import useUserStatus from "../hooks/useUserStatus";
+import FriendListItem from "../friend-list-item/friend-list-item.component";
 
 const FriendList = ({ list }) => {
 
@@ -6,12 +6,8 @@ const FriendList = ({ list }) => {
         <ul>
             {
                 list.length > 0 && list.map((item, index) => {
-                    const status = useUserStatus(item.id);
-
                     return (
-                        <li key={index} style={{ background: item.status === 'online' ? 'green' : 'red' }}>
-                            User with id {item.id} is {status};
-                        </li>
+                        <FriendListItem key={index} item={item} />
                     )
                 })
             }
