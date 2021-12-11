@@ -3,6 +3,7 @@ import TitleChanger from '../../components/hooks/useEffect/titleChanger.componen
 import User from '../../components/user/user.component';
 import FriendList from '../../components/friend-list/friend-list.component';
 import Counter2 from '../../components/hooks/useReducer/counter.component';
+import CustomForm from '../../components/hooks/useMemo/custom-form.component';
 
 const Home = () => {
     const users = [
@@ -38,7 +39,10 @@ const Home = () => {
             <hr />
             <h2>Counter2 Component using useReducer instead of useState</h2>
             <Counter2 />
+            <hr />
 
+            <h2>Customform with useMemo</h2>
+            <CustomForm />
 
         </>
     );
