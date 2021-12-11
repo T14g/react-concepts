@@ -1,1 +1,5 @@
 Used for optimization
+
+Uses memoization ( a optimization technique that passes a complex function
+to be memoized, the result then is "remembered" so the function 
+don't need to be called again for the same values)
