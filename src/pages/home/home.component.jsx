@@ -4,6 +4,7 @@ import User from '../../components/user/user.component';
 import FriendList from '../../components/friend-list/friend-list.component';
 import Counter2 from '../../components/hooks/useReducer/counter.component';
 import CustomForm from '../../components/hooks/useMemo/custom-form.component';
+import FocusOnClick from '../../components/hooks/useRef/focus-onclick.component';
 
 const Home = () => {
     const users = [
@@ -43,6 +44,11 @@ const Home = () => {
 
             <h2>Customform with useMemo</h2>
             <CustomForm />
+            <hr />
+
+            <h2>Using useRef to Focus on input element when you click the button</h2>
+            <p>Obs: useRef doesn't cause re-render</p>
+            <FocusOnClick />
 
         </>
     );
