@@ -6,6 +6,7 @@ import FriendList from '../../components/friend-list/friend-list.component';
 import Counter2 from '../../components/hooks/useReducer/counter.component';
 import CustomForm from '../../components/hooks/useMemo/custom-form.component';
 import FocusOnClick from '../../components/hooks/useRef/focus-onclick.component';
+import CepChecker from '../../components/cep-checker/cep-checker.component';
 
 const Home = () => {
     const users = [
@@ -51,6 +52,10 @@ const Home = () => {
                 <h2>Using useRef to Focus on input element when you click the button</h2>
                 <p>Obs: useRef doesn't cause re-render</p>
                 <FocusOnClick />
+                <hr />
+
+                <h2>Cep checker optimized with useMemo</h2>
+                <CepChecker />
             </div>
         </HomeStyles>
     );
